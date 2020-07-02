@@ -7,7 +7,7 @@ Attendance database management using PHP and MySQLi
 https://www.apachefriends.org/download.html
 
 
-### Setup the Database#
+### Setup the Database
 
 1. Navigate to phpmyAdmin after installation
 
