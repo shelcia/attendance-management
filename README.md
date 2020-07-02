@@ -2,12 +2,12 @@
 Attendance database management using PHP and MySQLi
 
 
-#Install XAMPP#
+### Install XAMPP
 
 https://www.apachefriends.org/download.html
 
 
-#Setup the Database#
+### Setup the Database#
 
 1. Navigate to phpmyAdmin after installation
 
