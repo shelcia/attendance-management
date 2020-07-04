@@ -11,14 +11,36 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style.css" />
         <title>Signup</title>
+        <style>
+          .container{
+            overflow-y:scroll;
+          }
+        </style>
 </head>
 <body>
         <?php
                 require "header.php";
          ?>
-        <div class="container text-center">
+        <div class="container text-center border">
+          <?php
+          if(isset($_GET["error"])){
+            if(($_GET["error"])==="emptyfields"){
+              echo '<p class="alert alert-danger" role="alert"> Empty Fields !!</p>';
+            }
+            else if(($_GET["error"])==="invalidemailandusername"){
+              echo '<p class="alert alert-danger" role="alert"> Incorrect Mail ID and Username!!</p>';
+            }
+            else if(($_GET["error"])==="invalidemail"){
+              echo '<p class="alert alert-danger" role="alert"> Incorrect Mail ID !!</p>';
+            }
+            else if(($_GET["error"])==="invalidusername"){
+              echo '<p class="alert alert-danger" role="alert"> Incorrect Username!!</p>';
+            }
+            else if(($_GET["error"])==="passwordmismatch"){
+              echo '<p class="alert alert-danger" role="alert"> Password Mismatch!!</p>';
+            }
+          }?>
         <form action="includes/signup.inc.php" method="POST">
         <div class="form-group">
               <label for="uname">Username:</label>
@@ -58,6 +80,9 @@
             </div>
             <div class="text-center">
               <button type="submit" name="signup-submit" class="btn btn-primary">Signup</button>
+            </div>
+            <div class="text-center">
+            <p>Already have an account then </p><a href="index.php">Signin!!</a>
             </div>
           </form>
         </div>
