@@ -1,4 +1,5 @@
-# attendance-management
+# Attendance Management
+
 Attendance database management using PHP and MySQLi
 
 
@@ -13,8 +14,18 @@ https://www.apachefriends.org/download.html
 
 2. Create database named "loginsystem"
 
-3. Create table names users (idUsers int(11) AUTO_INCREEMENT PRIMARY NOT NULL, uidUsers TINTTEXT NOT NULL,emailUsers TINYTEXT NOT NULL, pwdUsers LONGTEXT NOT NULL)
+3. Execute the query given below 
 
-Note: Point 3 is not a proper sql syntax, it's just for the sake of understanding. Make sure you stick with same variable names to work with my code.
+<code>
+  CREATE TABLE users(
+    idUsers INT NOT NULL AUTO_INCREMENT,
+    uidUsers TINYTEXT NOT NULL,
+    emailUsers TINYTEXT NOT NULL,
+    pwdUsers LONGTEXT NOT NULL,
+    PRIMARY KEY (idUsers)
+)
+</code>
+  
+Note: Make sure you stick with same variable names to work with my code.
 
-4. Now host the code in your localhost.
+4. Now just type this url http://192.168.64.3/attendance-management/ to work with it . (make sure your cloned the code you htdocs with xampp folder)
