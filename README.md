@@ -1,3 +1,14 @@
+![attendance-management](https://socialify.git.ci/shelcia/attendance-management/image?description=1&font=Rokkitt&language=1&owner=1&pattern=Plus&stargazers=1&theme=Dark)
+
+
+<div align="center">
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySql](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+
+</div>
+
+
 # Attendance Management
 
 Attendance database management using PHP and MySQLi
